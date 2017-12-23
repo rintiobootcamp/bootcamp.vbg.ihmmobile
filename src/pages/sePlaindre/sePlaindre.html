@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Envoyer une plainte</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Votre plainte</ion-label>
+      <ion-textarea id="msgIn" rows="10" aria-required="true" [(ngModel)]="plainte">
+      </ion-textarea>
+    </ion-item>
+    <ion-item>
+      <button ion-button icon-left color="danger" id="btnCancel" *ngIf="plainte" (click)="clear()">
+        <ion-icon name="close" id="icon-btn"></ion-icon>
+        Effacer
+      </button>
+      <button ion-button icon-right color="secondary" id="btnSend" *ngIf="plainte" (click)="sendPlainte()">
+        <ion-icon name="send"></ion-icon>
+        Envoyer
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,32 @@
+page-sePlaindre {
+    font-size: 1.5em;
+    #btnSend{
+        //margin-left: 5em;
+        margin-left: 2em;
+        font-size: 0.75em;
+        height: 2em;
+        margin-top: 3em;
+        
+    }
+    #msgIn{
+        //height: 8em;
+        width: auto;
+        font-size: 1.5em;
+    }
+
+    ion-label{
+        font-size: 1.5em;
+    }
+    #btnCancel{
+        font-size: 0.75em;
+        height: 2em;
+        margin-top: 3em;
+    }
+    #icon-btn{
+        padding-right: 1.5;
+    }
+
+    ion-icon{
+        padding-right: 0.5em;
+    }
+}
